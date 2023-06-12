@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Randome API Recipe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a7e9f794eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" name="" id="menuBtn" />
+      <div class="menu_overlay">
+        <label for="menuBtn">
+          <i class="fas fa-times"></i>
+        </label>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="landing_page">
+        <div class="menu">
+          <label for="menuBtn">
+            <i class="fas fa-bars"></i>
+          </label>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <h1>Plan your Meals for the Week</h1>
+      <div id="mealPlanContainer"></div>
+      <div id="mealPlanContainer"></div>
+      <div id="nutrientsContainer"></div>
+
+      <button onclick="getMealPlan()">Get Suggestions Here</button>
+    </section>
+
+    <h1>Search Recipes</h1>
+    <input type="text" id="searchInput" placeholder="Enter a search term" />
+    <button onclick="searchRecipes()">Search</button>
+
+    <h1>Search Results</h1>
+    <div id="searchResultsContainer"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
